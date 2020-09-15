@@ -1,0 +1,15 @@
+{
+  "name": "gradof",
+  "version": "0.0.1",
+  "description": "Gestor de Reportes y Almacenamiento de Datos Orientado a Finanzas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tocss": "sass watch"
+  },
+  "author": "subatomics",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
