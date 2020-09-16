@@ -33,7 +33,6 @@ function getId(div) {
   var item = document.getElementById(div);
   return item;
 }
-function busquedaOp() {}
 document.addEventListener("DOMContentLoaded", function () {
   var searchBtn = getId("userCardSearch");
   var searchBox = getId("inputSearchBox");
