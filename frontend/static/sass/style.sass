@@ -87,43 +87,45 @@ html, body
             box-shadow: none
             color: $colorPrincipalBase
             transition: all .3s
+#inputSearchBox,#inputSearchButton
+    position: absolute
+    display: none
+    height: 40px
+    padding: 0px 20px 0px 20px
+    font-family: $defaultFont
+    background-color: $colorPrincipalBase
+    color: $colorVerdeAgua
+    border: none
+    width: 0px
+    border-radius: 5px
+    outline: none
+    font-weight: 600
+    box-shadow: 2px 2px 0 $colorVerdeAgua,3px 3px 0px $colorVerdeAgua
+#inputSearchBox
+    transition: width 0.4s
+#inputSearchButton
+    left: 70px
+    cursor: pointer
+    transition: left 0.3s
+    &:hover
+        color: $colorPrincipalBase
+        background-color: $colorVerdeAgua
+        box-shadow: 2px 2px 0 $colorPrincipalBase,3px 3px 0px $colorPrincipalBase
 .container
     width: calc(100% - 60px)
     height: 100%
     background-color: $colorInteriorBase
     position: relative
-.cent-absolute
-    position: absolute
-    margin: auto
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    height: 150px
-    width: 350px
-    background-color: $colorPrincipalBase
-    border-radius: 5px
-    box-shadow: 5px 5px 0 $colorVerdeAgua, 4px 4px 0 $colorVerdeAgua, 3px 3px 0 $colorVerdeAgua,2px 2px 0 $colorVerdeAgua
-    .blob-button
-        color: $colorVerdeAgua
-        border: 1px solid $colorVerdeAgua
-        background-color: transparent
-        font-family: $defaultFont
-        outline: none
-        height: 30px
-        padding: 0 10px 0 10px
-        cursor: pointer
-        border-radius: 5px
-        font-weight: 700
-        font-size: 15px
-        &:hover
-            color: $colorPrincipalBase
-            background-color: $colorVerdeAgua
 .tippy-box[data-theme~='gradof'] 
     background-color: $colorPrincipalBase
     font-family: $defaultFont
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
     font-weight: 700
     font-size: 15px
+    padding: 0 10px 0 10px
     color: $colorVerdeAgua
 .tippy-box[data-theme~='gradof'][data-placement^='top'] > .tippy-arrow::before 
     border-top-color: $colorPrincipalBase

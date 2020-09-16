@@ -19,4 +19,4 @@ app.listen(process.env.PORT || 5060, () => {
     process.send({ event: "online", url: "http://localhost:5060/" });
   }
 });
-reload(app);
+//reload(app);

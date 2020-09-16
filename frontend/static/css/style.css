@@ -93,6 +93,37 @@ html, body {
   transition: all 0.3s;
 }
 
+#inputSearchBox, #inputSearchButton {
+  position: absolute;
+  display: none;
+  height: 40px;
+  padding: 0px 20px 0px 20px;
+  font-family: "Nunito", sans-serif;
+  background-color: #2F2A35;
+  color: #40fcc7;
+  border: none;
+  width: 0px;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 600;
+  box-shadow: 2px 2px 0 #40fcc7, 3px 3px 0px #40fcc7;
+}
+
+#inputSearchBox {
+  transition: width 0.4s;
+}
+
+#inputSearchButton {
+  left: 70px;
+  cursor: pointer;
+  transition: left 0.3s;
+}
+#inputSearchButton:hover {
+  color: #2F2A35;
+  background-color: #40fcc7;
+  box-shadow: 2px 2px 0 #2F2A35, 3px 3px 0px #2F2A35;
+}
+
 .container {
   width: calc(100% - 60px);
   height: 100%;
@@ -100,42 +131,16 @@ html, body {
   position: relative;
 }
 
-.cent-absolute {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 150px;
-  width: 350px;
-  background-color: #2F2A35;
-  border-radius: 5px;
-  box-shadow: 5px 5px 0 #40fcc7, 4px 4px 0 #40fcc7, 3px 3px 0 #40fcc7, 2px 2px 0 #40fcc7;
-}
-.cent-absolute .blob-button {
-  color: #40fcc7;
-  border: 1px solid #40fcc7;
-  background-color: transparent;
-  font-family: "Nunito", sans-serif;
-  outline: none;
-  height: 30px;
-  padding: 0 10px 0 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 15px;
-}
-.cent-absolute .blob-button:hover {
-  color: #2F2A35;
-  background-color: #40fcc7;
-}
-
 .tippy-box[data-theme~=gradof] {
   background-color: #2F2A35;
   font-family: "Nunito", sans-serif;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 15px;
+  padding: 0 10px 0 10px;
   color: #40fcc7;
 }
 
