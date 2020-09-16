@@ -29,33 +29,7 @@ tippy(".user-photo", {
   offset: [0, 15],
 });
 
-function buscarCardUser(a) {
-  var divSearch = document.createElement("div");
-  var divSearchReady = document.createElement("button");
-  var divSearchCancel = document.createElement("button");
-  divSearch.id = "destroyableElement";
-  divSearch.className = "cent-absolute";
-  divSearchReady.id = "ready";
-  divSearchReady.className = "blob-button";
-  divSearchReady.innerHTML = "Buscar";
-  divSearchCancel.id = "cancel";
-  divSearchCancel.className = "blob-button";
-  divSearchCancel.innerHTML = "Cancelar";
-  a.appendChild(divSearch);
-  divSearch.appendChild(divSearchReady);
-  divSearch.appendChild(divSearchCancel);
-}
-
 function getId(div) {
   var item = document.getElementById(div);
   return item;
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  var gen = getId("userCardSearch");
-  var appView = getId("appView");
-  gen.addEventListener("click", function (e) {
-    e.preventDefault();
-    buscarCardUser(appView);
-  });
-});
