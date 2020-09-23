@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GRADOF</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css"
-    />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
-
   <body>
     <div id="bigcontainer">
       <div class="sidebar">
@@ -24,7 +20,11 @@
             class="search-bar"
             data-tippy-content="Buscar"
           >
-            <span class="mdi mdi-magnify"></span>
+            <span
+              class="iconify"
+              data-icon="heroicons-solid:search"
+              data-inline="false"
+            ></span>
           </div>
           <form action="">
             <input
@@ -37,27 +37,55 @@
           </form>
         </div>
         <nav class="nav">
-          <a href="" data-tippy-content="Resumen"
-            ><span class="mdi mdi-chart-donut"></span
+          <a href="/" data-tippy-content="Resumen" data-link
+            ><span
+              class="iconify"
+              data-icon="bx:bxs-doughnut-chart"
+              data-inline="false"
+            ></span
           ></a>
           <!--Resumen-->
-          <a href="" data-tippy-content="Insumos"
-            ><span class="mdi mdi-package-variant-closed"></span></a
+          <a href="/insumos" data-tippy-content="Insumos" data-link
+            ><span
+              class="iconify"
+              data-icon="mdi:package-variant-closed"
+              data-inline="false"
+            ></span></a
           ><!--Insumos-->
-          <a href="" data-tippy-content="Reportes"
-            ><span class="mdi mdi-file-chart"></span></a
+          <a href="/reportes" data-tippy-content="Reportes" data-link
+            ><span
+              class="iconify"
+              data-icon="bx:bxs-report"
+              data-inline="false"
+            ></span></a
           ><!--Reportes-->
-          <a href="" data-tippy-content="Historial"
-            ><span class="mdi mdi-history"></span></a
+          <a href="/historial" data-tippy-content="Historial" data-link
+            ><span
+              class="iconify"
+              data-icon="ic:baseline-history"
+              data-inline="false"
+            ></span></a
           ><!--Historial-->
-          <a href="" data-tippy-content="Usuarios"
-            ><span class="mdi mdi-account"></span></a
+          <a href="/usuarios" data-tippy-content="Usuarios" data-link
+            ><span
+              class="iconify"
+              data-icon="bx:bxs-user"
+              data-inline="false"
+            ></span></a
           ><!--Usuarios-->
-          <a href="" data-tippy-content="Nosotros"
-            ><span class="mdi mdi-information-outline"></span></a
+          <a href="/nosotros" data-tippy-content="Nosotros" data-link
+            ><span
+              class="iconify"
+              data-icon="ant-design:info-circle-outlined"
+              data-inline="false"
+            ></span></a
           ><!--Nosotros-->
-          <a href="" data-tippy-content="Configuracion"
-            ><span class="mdi mdi-cog"></span></a
+          <a href="/configuracion" data-tippy-content="Configuracion" data-link
+            ><span
+              class="iconify"
+              data-icon="bx:bx-cog"
+              data-inline="false"
+            ></span></a
           ><!--Configuración-->
         </nav>
       </div>

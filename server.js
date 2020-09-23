@@ -8,7 +8,10 @@ app.use(
   "/static",
   express.static(path.resolve(__dirname, "frontend", "static"))
 );
-
+app.use(
+  "/views",
+  express.static(path.resolve(__dirname, "frontend", "static/views/vCont"))
+);
 app.get("/*", (req, res) => {
   res.sendFile(path.resolve("frontend", "index.html"));
 });

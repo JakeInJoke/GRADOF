@@ -1,11 +1,16 @@
 //impotaciones de fuentes
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap')
+@import url('../fonts/helvetica/stylesheetHelvetica.css')
 //fuentes de letras declaradas
 $defaultFont: 'Nunito', sans-serif
+$helveticaFont: 'Helvetica Now Text'
 //colores declarados
-$colorPrincipalBase: #2F2A35
+$colorPrincipalBase: #242846
+$colorInteriorOscuro: #1f2b36
 $colorInteriorBase: #F6F8FA
 $colorVerdeAgua: #40fcc7
+$colorRojoNeon: #ff3b3b
+$colorAzulNeon: #404dfc
 //color de border
 $colorBordeBase: #E1E4E8
 
@@ -61,9 +66,16 @@ html, body
                 span
                     color: $colorPrincipalBase
                     transition: all .2s
+                svg
+                    color: $colorPrincipalBase
+                    transition: all .2s
             span
                 color: $colorVerdeAgua
                 font-size: 25px
+            svg
+                color: $colorVerdeAgua
+                width: 1.5em
+                height: 1.5em
 .nav 
     display: flex
     flex-wrap: wrap
@@ -93,14 +105,14 @@ html, body
     height: 40px
     padding: 0px 20px 0px 20px
     font-family: $defaultFont
-    background-color: $colorPrincipalBase
-    color: $colorVerdeAgua
+    background-color: $colorVerdeAgua
+    color: $colorPrincipalBase
     border: none
     width: 0px
     border-radius: 5px
     outline: none
     font-weight: 600
-    box-shadow: 2px 2px 0 $colorVerdeAgua,3px 3px 0px $colorVerdeAgua
+    box-shadow: 2px 2px 0 $colorPrincipalBase,3px 3px 0px $colorPrincipalBase
 #inputSearchBox
     transition: width 0.4s
 #inputSearchButton
@@ -109,16 +121,17 @@ html, body
     transition: left 0.3s
     font-weight: 700
     &:hover
-        color: $colorPrincipalBase
-        background-color: $colorVerdeAgua
-        box-shadow: 2px 2px 0 $colorPrincipalBase,3px 3px 0px $colorPrincipalBase
+        color: $colorVerdeAgua
+        background-color: $colorPrincipalBase
+        box-shadow: 2px 2px 0 $colorVerdeAgua,3px 3px 0px $colorVerdeAgua
 .container
     width: calc(100% - 60px)
-    height: 100%
-    background-color: $colorInteriorBase
+    height: calc( 100% - 20px )
+    padding: 10px
+    background-image: linear-gradient(to right,$colorInteriorOscuro,$colorPrincipalBase)
     position: relative
 .tippy-box[data-theme~='gradof'] 
-    background-color: $colorPrincipalBase
+    background-color: $colorVerdeAgua
     font-family: $defaultFont
     height: 40px
     display: flex
@@ -127,12 +140,12 @@ html, body
     font-weight: 700
     font-size: 15px
     padding: 0 10px 0 10px
-    color: $colorVerdeAgua
+    color: $colorPrincipalBase
 .tippy-box[data-theme~='gradof'][data-placement^='top'] > .tippy-arrow::before 
-    border-top-color: $colorPrincipalBase
+    border-top-color: $colorVerdeAgua
 .tippy-box[data-theme~='gradof'][data-placement^='bottom'] > .tippy-arrow::before 
-    border-bottom-color: $colorPrincipalBase
+    border-bottom-color: $colorVerdeAgua
 .tippy-box[data-theme~='gradof'][data-placement^='left'] > .tippy-arrow::before 
-    border-left-color: $colorPrincipalBase
+    border-left-color: $colorVerdeAgua
 .tippy-box[data-theme~='gradof'][data-placement^='right'] > .tippy-arrow::before
-    border-right-color: $colorPrincipalBase
+    border-right-color: $colorVerdeAgua
